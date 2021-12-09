@@ -81,6 +81,12 @@ a{
     nav{
         padding: 20px 5% 0 5%;
     }
+    .logo{
+        margin-left: -10%;
+    }
+    .logo img{
+        width: 70%;
+    }
     .navItems{
         position: absolute;
         align-items: flex-start;
