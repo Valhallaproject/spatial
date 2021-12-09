@@ -1,0 +1,148 @@
+.technology{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.containerTechnology{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12%;
+    align-items: center;
+}
+.materialsItems{
+    width: 80px;
+    padding: 0;
+}
+.materialsItems li{
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    list-style: none;
+}
+.materialsItems a:hover{
+    border-color: #fff;
+}
+.materialsItems a{
+    font-size: 32px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    padding: 20px 29px 20px 32px;
+    font-family: 'bellefair';
+}
+.active_item {
+    background-color: #fff;
+    color: black;
+}
+.infoTechnology{
+    display: flex;
+    width: 100%;
+}
+.materialsInfo{
+    width: 490px;
+    margin: 0 auto;
+}
+.materialsInfo h2{
+    font-size: 56px;
+    font-family: 'bellefair';
+    font-weight: 200;
+}
+.materialsInfo h4{
+    font-size: 16px;
+    font-family: 'bellefair';
+    color: #d0d6f9;
+}
+.materialsInfo p {
+    color: #d0d6f9;
+}
+.materialsImage {
+    width: 515px;
+    height: 527px;
+    object-fit: contain;
+}
+
+@media  screen and (max-width:1300px) and (min-width:1000px){
+    .materialsImage {
+        width: 300px;
+        height: 527px;
+        object-fit: contain;
+        
+    }
+    .materialsImage img{
+        width: 300px;
+        margin-top: 10vh;
+    }
+}
+@media  screen and (max-width:999px) {
+    .technology{
+        width: auto;
+        background-image: url('../images/technology/background-technology-tablet.jpg');
+    }
+    .containerTechnology{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .infoTechnology{
+        flex-direction: column;
+    }
+    .materialsItems{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .materialsItems li:hover{
+        background-color: transparent;
+    }
+    .materialsItems a{
+        font-size: 28px;
+        padding: 15px 24px 15px 27px;
+    }
+    
+    .materialsImage{
+        height: 310px;
+        width: 100%;
+        margin-top: 5vh;
+        object-fit: cover;
+        margin-bottom: 3vh;
+    }
+    .materialsImage img{
+        width: 100%;
+        height: 310px;
+    }
+    .materialsInfo{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media  screen and (max-width:700px){
+    .materialsImage{
+        height: 170px;
+    }
+    .materialsImage img{
+        height: 170px;
+    }
+    .materialsItems{
+        height: 80px;
+    }
+    .materialsItems a{
+        font-size: 20px;
+        padding: 8px 14px 8px 16px;
+
+    }
+    .materialsInfo h4{
+        font-size: 14px;
+    }
+    .materialsInfo h2{
+        font-size: 24px;
+    }
+    .materialsInfo p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+}

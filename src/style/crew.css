@@ -1,0 +1,148 @@
+.crew{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.containerCrew{
+    display: flex;
+}
+.membersInfo{
+    margin-left: 12%;
+}
+.membersInfo h3{
+    font-size: 32px;
+    margin-left: 0;
+    font-family: 'bellefair';
+    color: #d0d6f9;
+    text-transform: uppercase;
+}
+.membersInfo h2{
+    font-size: 56px;
+    font-family: 'bellefair';
+}
+.membersInfo p{
+    font-size: 18px;
+    line-height: 32px;
+    width: 445px;
+    color: #d0d6f9;
+}
+.membersItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 10%;
+    bottom: 5vh;
+    position: absolute;
+}
+.membersItems li{
+    list-style: none;
+}
+.dot{
+    background-color: #979797;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.dot:hover{
+    background-color: #d0d6f9;
+}
+.dot_nav .dot{
+    background-color: white;
+}
+.membersImage{
+    position: absolute;
+    bottom: 0vh;
+    margin-left: 55%;
+}
+
+@media screen and (max-width: 1200px)and (min-width:1000px){
+    .membersImage{
+        margin-left: 65%;
+    }
+    .membersImage img{
+       width: 90%;
+    }
+}
+@media  screen and (max-width:999px){
+    .crew{
+        background-image: url('../images/crew/background-crew-tablet.jpg');
+    }
+    
+    .containerCrew{
+        flex-direction: column;
+    }
+    .membersInfo{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .membersInfo p{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .membersInfo h3{
+        font-size: 24px;
+        margin-top: 5vh;
+        margin-bottom: 1vh;
+    }
+    .membersInfo h2{
+        font-size: 40px;
+        margin-bottom: 2vh;
+    }
+    .membersItems{
+        position: initial;
+        width: 15%;
+        margin: 0 auto;
+    }
+    .membersImage{
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+    .membersImage img{
+        width: 55%;
+        height: 525px;
+    }
+}
+@media  screen and (max-width:700px){
+    .containerCrew{
+        flex-direction: column-reverse;
+    }
+    .membersImage{
+        position: initial;
+        width: 90%;
+        margin: 0 auto;
+        height: 253px;
+    }
+    .membersImage img{
+        height: 233px;
+        width: 200px;
+        margin-top: 3vh;
+    }
+    .membersInfo h3{
+        font-size: 16px;
+        margin-top: 8vh;
+    }
+    .membersInfo h2{
+        font-size: 24px;
+    }
+    .membersInfo p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .membersItems{
+        position: relative;
+        width: 25%;
+        margin-left: 37.5%;
+        top: -220px;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+}

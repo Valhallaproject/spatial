@@ -1,0 +1,112 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contentHome{
+    width: 475px;
+    padding-top: 25vh ;
+}
+.contentHome h4{
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 5px;
+}
+.contentHome h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: "bellefair";
+    margin: 0;
+}
+.contentHome p{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    line-height: 32px;
+}
+.explore{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "bellefair";
+    letter-spacing: 2px;
+    margin-left: 5%;
+    margin-top: 33vh;
+    cursor: pointer;
+}
+.explore:hover{
+    box-shadow: 10px 5px 10px 5px rgba(180, 180, 180, 0.3);
+    box-shadow: 0px 0px 0px 40px rgba(255, 255, 255, 0.145);
+    transition: all 0.3s ease-in;
+}
+
+@media  screen and (max-width:999px) {
+    .home{
+        background-image: url('../images/home/background-home-tablet.jpg');
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contentHome{
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+    .contentHome p{
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .explore{
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        top: 80vh;
+    }
+    
+}
+@media  screen and (max-width:700px){
+    .home{
+        background-position: bottom;
+    }
+    .contentHome{
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+    .contentHome h4{
+        font-size: 16px;
+        margin-bottom: 3vh;
+    }
+    .contentHome h1{
+        font-size: 80px;
+        margin-bottom: 3vh;
+    }
+    .contentHome p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .explore{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+}
+
+
